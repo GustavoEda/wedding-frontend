@@ -5,7 +5,7 @@ import Balancer from "react-wrap-balancer";
 import { useDemoModal } from "./demo-modal";
 
 export default function Card({
-  id,
+  key,
   title,
   link,
   price,
@@ -13,7 +13,7 @@ export default function Card({
   selected,
   description,
 }: {
-  id: number,
+  key: number,
   title: string;
   link: string;
   price: string;
@@ -21,7 +21,7 @@ export default function Card({
   selected: boolean;
   description: string;
 }) {
-  const { DemoModal, setShowDemoModal } = useDemoModal({ title, id });
+  const { DemoModal, setShowDemoModal } = useDemoModal({ title, key });
   return (
     <div
       className={`relative col-span-1 overflow-hidden rounded-xl bg-white shadow-md`}
