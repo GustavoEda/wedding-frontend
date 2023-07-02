@@ -70,6 +70,7 @@ export default async function Home() {
         {gifts.map(({ id, name, demo, link, price, selected, description } : {id: number, name: string, demo: any, link: string, price: string, selected: boolean, description: string}) => (
           <Card
             key={id}
+            id={id}
             title={name}
             link={link}
             price={price}

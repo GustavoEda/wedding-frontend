@@ -12,18 +12,18 @@ const DemoModal = ({
   showDemoModal,
   setShowDemoModal,
   title,
-  key,
+  id,
 }: {
   showDemoModal: boolean;
   setShowDemoModal: Dispatch<SetStateAction<boolean>>;
   title: string;
-  key: number;
+  id: number;
 }) => {
   const [isConfirmed, setIsConfirmed] = useState(false);
   const [name, setName] = useState('');
 
-  const onClickConfirmButton = async (key: number) => {
-    const response = await fetch(`https://gifts-list-beta.vercel.app/api/gifts/${key}`, {
+  const onClickConfirmButton = async (id: number) => {
+    const response = await fetch(`https://gifts-list-beta.vercel.app/api/gifts/${id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json'
@@ -103,7 +103,7 @@ const DemoModal = ({
               <button
                 type="button"
                 className="mb-3 mr-2 rounded-lg bg-olive px-5 py-2.5 text-center text-sm font-medium text-cream shadow-lg"
-                onClick={() => onClickConfirmButton(key)}
+                onClick={() => onClickConfirmButton(id)}
               >
                 Confirmar
               </button>
@@ -115,7 +115,7 @@ const DemoModal = ({
   );
 };
 
-export function useDemoModal({ title, key }: { title: string, key: number  }) {
+export function useDemoModal({ title, id }: { title: string, id: number  }) {
   const [showDemoModal, setShowDemoModal] = useState(false);
 
   const DemoModalCallback = useCallback(() => {
@@ -124,10 +124,11 @@ export function useDemoModal({ title, key }: { title: string, key: number  }) {
         showDemoModal={showDemoModal}
         setShowDemoModal={setShowDemoModal}
         title={title}
-        key={key}
+        id={id}
+        key={id}
       />
     );
-  }, [showDemoModal, setShowDemoModal, title, key]);
+  }, [showDemoModal, setShowDemoModal, title, id]);
 
   return useMemo(
     () => ({ setShowDemoModal, DemoModal: DemoModalCallback }),

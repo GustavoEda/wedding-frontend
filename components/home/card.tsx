@@ -6,6 +6,7 @@ import { useDemoModal } from "./demo-modal";
 
 export default function Card({
   key,
+  id,
   title,
   link,
   price,
@@ -14,6 +15,7 @@ export default function Card({
   description,
 }: {
   key: number,
+  id: number,
   title: string;
   link: string;
   price: string;
@@ -21,7 +23,7 @@ export default function Card({
   selected: boolean;
   description: string;
 }) {
-  const { DemoModal, setShowDemoModal } = useDemoModal({ title, key });
+  const { DemoModal, setShowDemoModal } = useDemoModal({ title, id });
   return (
     <div
       className={`relative col-span-1 overflow-hidden rounded-xl bg-white shadow-md`}
