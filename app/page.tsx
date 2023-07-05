@@ -13,8 +13,17 @@ export default async function Home() {
     link: `[${gift.link_placeholder}](${gift.link})`,
     price: gift.price ,
     demo: (
-      <div className="flex items-center justify-center space-x-20">
-        <Image alt={gift.name} src={gift.image} width={350} height={350} />
+      <div
+        className="flex items-center justify-center space-x-20"
+        style={{ height: "100%" }}
+      >
+        <Image
+          style={{ width: "100%", height: "100%", objectFit: "cover" }}
+          alt={gift.name}
+          src={gift.image}
+          width={350}
+          height={350}
+        />
       </div>
     ),
     selected: Boolean(gift.guest),
@@ -37,7 +46,7 @@ export default async function Home() {
         </h1>
         <p
           className="mt-6 animate-fade-up text-center text-gray-500 opacity-0 md:text-xl"
-          style={{ animationDelay: "0.25s", animationFillMode: "forwards", textAlign: "justify" }}
+          style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
         >
           <Balancer>
           Estamos felizes em compartilhar esse momento com você! 
