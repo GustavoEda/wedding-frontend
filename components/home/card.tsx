@@ -1,5 +1,5 @@
 "use client";
-import { ReactNode } from "react";
+import { ReactNode, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import Balancer from "react-wrap-balancer";
 import { useDemoModal } from "./demo-modal";
@@ -23,7 +23,8 @@ export default function Card({
   selected: boolean;
   description: string;
 }) {
-  const { DemoModal, setShowDemoModal } = useDemoModal({ title, id });
+  const [isSelected, setIsSelected] = useState(Boolean(selected));
+  const { DemoModal, setShowDemoModal } = useDemoModal({ title, id, setIsSelected });
   return (
     <div
       className={`relative col-span-1 overflow-hidden rounded-xl bg-white shadow-md`}
@@ -87,7 +88,7 @@ export default function Card({
             </ReactMarkdown>
           </Balancer>
         </div>
-        {!selected ? (
+        {!isSelected ? (
           <div
             style={{
               display: "flex",

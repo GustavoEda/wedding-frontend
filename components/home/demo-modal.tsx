@@ -13,11 +13,13 @@ const DemoModal = ({
   setShowDemoModal,
   title,
   id,
+  setIsSelected,
 }: {
   showDemoModal: boolean;
   setShowDemoModal: Dispatch<SetStateAction<boolean>>;
   title: string;
   id: number;
+  setIsSelected: any,
 }) => {
   const [isConfirmed, setIsConfirmed] = useState(false);
   const [name, setName] = useState('');
@@ -30,7 +32,8 @@ const DemoModal = ({
       },
       body: JSON.stringify({guest: name})
     });
-    setIsConfirmed(!isConfirmed);
+    setIsConfirmed(!isConfirmed)
+    setIsSelected(true);
   };
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -115,7 +118,7 @@ const DemoModal = ({
   );
 };
 
-export function useDemoModal({ title, id }: { title: string, id: number  }) {
+export function useDemoModal({ title, id, setIsSelected }: { title: string, id: number, setIsSelected: any  }) {
   const [showDemoModal, setShowDemoModal] = useState(false);
 
   const DemoModalCallback = useCallback(() => {
@@ -126,9 +129,10 @@ export function useDemoModal({ title, id }: { title: string, id: number  }) {
         title={title}
         id={id}
         key={id}
+        setIsSelected={setIsSelected}
       />
     );
-  }, [showDemoModal, setShowDemoModal, title, id]);
+  }, [showDemoModal, setShowDemoModal, title, id, setIsSelected]);
 
   return useMemo(
     () => ({ setShowDemoModal, DemoModal: DemoModalCallback }),
