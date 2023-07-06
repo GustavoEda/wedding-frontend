@@ -69,7 +69,7 @@ export default function Card({
             </ReactMarkdown>
           </Balancer>
         </div>
-        <div style={{paddingBottom: "60px"}} className="leading-normal text-gray-500">
+        <div className="leading-loose text-gray-500">
           <Balancer>
             <ReactMarkdown
               components={{
@@ -106,12 +106,13 @@ export default function Card({
             </button>
           </div>
         ) : (
-          <Balancer
+          <div
             style={{
               display: "flex",
               justifyContent: "center",
               position: "absolute",
               width: "100%",
+              maxWidth: "none",
               bottom: 0,
             }}>
             <button
@@ -121,7 +122,7 @@ export default function Card({
             >
               Já foi escolhido
             </button>
-          </Balancer>
+          </div>
         )}
       </div>
     </div>
