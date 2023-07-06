@@ -70,7 +70,7 @@ export default function Card({
             </ReactMarkdown>
           </Balancer>
         </div>
-        <div className="leading-loose text-gray-500">
+        <div className="leading-normal text-gray-500" style={{marginBottom: "20%"}}>
           <Balancer>
             <ReactMarkdown
               components={{
