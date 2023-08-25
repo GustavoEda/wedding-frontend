@@ -62,18 +62,10 @@ export default async function Home() {
           style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
         >
           <Balancer>
-            <strong>PIX Angelo:</strong> angelo.bz.souza@gmail.com
+            <strong>PIX PicPay Malu:</strong> malu_cavazotto@hotmail.com
           </Balancer>
         </p>
 
-        <p
-          className="animate-fade-up text-center text-gray-500 opacity-0 md:text-xl"
-          style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
-        >
-          <Balancer>
-            <strong>PIX Malu:</strong> 491.749.118-56
-          </Balancer>
-        </p>
       </div>
       <div className="my-10 grid w-full max-w-screen-xl animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
         {gifts.map(({ id, name, demo, link, price, selected, description } : {id: number, name: string, demo: any, link: string, price: string, selected: boolean, description: string}) => (
