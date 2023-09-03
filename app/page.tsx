@@ -66,6 +66,15 @@ export default async function Home() {
           </Balancer>
         </p>
 
+        <p
+          className="mt-6 animate-fade-up text-center text-gray-500 opacity-0 md:text-xl"
+          style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
+        >
+          <Balancer>
+            Lembrando que após o casamento estaremos em lua de mel. Esteremos viajando de 19/11/2023 até 13/12/2023. Se forem mandar coisas para entregar em casa, levem isso em consideração. Nosso endereço <strong>Av. Presidente Wilson, 40 - AP 1001A, Gonzaga - Santos</strong>
+          </Balancer>
+        </p>
+
       </div>
       <div className="my-10 grid w-full max-w-screen-xl animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
         {gifts.map(({ id, name, demo, link, price, selected, description } : {id: number, name: string, demo: any, link: string, price: string, selected: boolean, description: string}) => (
