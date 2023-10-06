@@ -52,8 +52,8 @@ export default async function Home() {
           Estamos felizes em compartilhar esse momento com você! 
           Como você sabe, nós moramos juntos há um tempo e por isso nossa lista de presentes não tem tantos itens como uma lista comum.
           Se quiser dar um presente, só nos indicar, mas caso queira ajudar com algum valor, estamos deixando nosso pix.
-          Esperamos não criar nenhum desconforto por aí, então não se preocupem em dar qualquer quantia que vá atrapalhar sua vida financeira. 
-          O mais importante é ter você com a gente!
+          Esperamos não criar nenhum desconforto por aí, então <strong>não se preocupem em dar qualquer quantia que vá atrapalhar sua vida financeira. 
+          O mais importante é ter você com a gente!</strong>
           </Balancer>
         </p>
 
