@@ -3,7 +3,7 @@ import Balancer from "react-wrap-balancer";
 import Image from "next/image";
 
 export default async function Home() {
-  const response = await fetch('https://gifts-list-beta.vercel.app/api/gifts', { cache: 'no-store' });
+  const response = await fetch('https://wedding-backend-seven.vercel.app/api/gifts', { cache: 'no-store' });
   const data = await response.json();
   const gifts : any = [];
 
