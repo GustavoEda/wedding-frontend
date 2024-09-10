@@ -25,7 +25,7 @@ const DemoModal = ({
   const [name, setName] = useState('');
 
   const onClickConfirmButton = async (id: number) => {
-    const response = await fetch(`https://gifts-list-beta.vercel.app/api/gifts/${id}`, {
+    const response = await fetch(`https://wedding-backend-seven.vercel.app/api/gifts/${id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json'
