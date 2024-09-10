@@ -42,18 +42,21 @@ export default async function Home() {
             color: "#531D13",
           }}
         >
-          <Balancer>Angelo & Malu</Balancer>
+          <Balancer>Eda & Renata</Balancer>
         </h1>
         <p
           className="mt-6 animate-fade-up text-center text-gray-500 opacity-0 md:text-xl"
           style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
         >
           <Balancer>
-          Estamos felizes em compartilhar esse momento com você! 
-          Como você sabe, nós moramos juntos há um tempo e por isso nossa lista de presentes não tem tantos itens como uma lista comum.
-          Se quiser dar um presente, só nos indicar, mas caso queira ajudar com algum valor, estamos deixando nosso pix.
-          Esperamos não criar nenhum desconforto por aí, então <strong>não se preocupem em dar qualquer quantia que vá atrapalhar sua vida financeira. 
-          O mais importante é ter você com a gente!</strong>
+          Oi pessoal,
+          Com o coração transbordando de alegria, queremos compartilhar uma notícia maravilhosa: vamos nos casar! 🎉
+          Como alguns de vocês já sabem, o Gustavo/Eda/Cutuca já mora sozinho e tem bastante coisa, e a Renata, sempre ansiosa, já garantiu alguns itens para o nosso novo lar.
+          Se vocês desejarem nos presentear com algo físico, é só entrar em contato com a Renata ou o Gustavo para combinarmos a entrega. 
+          Caso prefiram nos ajudar com algum valor para a nossa nova vida, deixamos alguns itens abaixo com um código pix que vai direto pra noiva. 
+          <strong>Mas lembrem-se: o mais importante para nós é a presença de cada um de vocês nesse momento tão especial.
+          ❤️ Não se sintam pressionados a dar presentes e valores que possam comprometer suas finanças.</strong>
+          Com carinho, Renata e Gustavo/Eda/Cutuca.
           </Balancer>
         </p>
 
@@ -62,16 +65,7 @@ export default async function Home() {
           style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
         >
           <Balancer>
-            <strong>PIX PicPay Malu:</strong> malu_cavazotto@hotmail.com
-          </Balancer>
-        </p>
-
-        <p
-          className="mt-6 animate-fade-up text-center text-gray-500 opacity-0 md:text-xl"
-          style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
-        >
-          <Balancer>
-            Lembrando que após o casamento estaremos em lua de mel. Esteremos viajando de 19/11/2023 até 13/12/2023. Se forem mandar coisas para entregar em casa, levem isso em consideração. Nosso endereço <strong>Av. Presidente Wilson, 40 - AP 1001A, Gonzaga - Santos</strong>
+            <strong>PIX Renata:</strong> PIX-RENATA
           </Balancer>
         </p>
 
