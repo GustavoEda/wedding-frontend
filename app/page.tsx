@@ -71,12 +71,11 @@ export default async function Home() {
 
       </div>
       <div className="my-10 grid w-full max-w-screen-xl animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
-        {gifts.map(({ id, name, demo, link, price, selected, description } : {id: number, name: string, demo: any, link: string, price: string, selected: boolean, description: string}) => (
+        {gifts.map(({ id, name, demo, price, selected, description } : {id: number, name: string, demo: any, price: string, selected: boolean, description: string}) => (
           <Card
             key={id}
             id={id}
             title={name}
-            link={link}
             price={price}
             demo={demo}
             selected={selected}
