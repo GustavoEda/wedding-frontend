@@ -70,19 +70,6 @@ export default function Card({
         </div>
          <div className="leading-normal text-gray-500" style={{marginBottom: "20%"}}>
           <Balancer>
-            <ReactMarkdown
-              components={{
-                a: ({ node, ...props }) => (
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    {...props}
-                    className="font-medium text-gray-800 underline transition-colors"
-                  />
-                ),
-              }}
-            >
-            </ReactMarkdown>
           </Balancer>
         </div>
         {!isSelected ? (
