@@ -8,7 +8,6 @@ export default function Card({
   key,
   id,
   title,
-  link,
   price,
   demo,
   selected,
@@ -17,7 +16,6 @@ export default function Card({
   key: number,
   id: number,
   title: string;
-  link: string;
   price: string;
   demo: ReactNode;
   selected: boolean;
@@ -67,24 +65,6 @@ export default function Card({
               }}
             >
               {description}
-            </ReactMarkdown>
-          </Balancer>
-        </div>
-        <div className="leading-normal text-gray-500" style={{marginBottom: "20%"}}>
-          <Balancer>
-            <ReactMarkdown
-              components={{
-                a: ({ node, ...props }) => (
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    {...props}
-                    className="font-medium text-gray-800 underline transition-colors"
-                  />
-                ),
-              }}
-            >
-              {link}
             </ReactMarkdown>
           </Balancer>
         </div>
