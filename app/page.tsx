@@ -10,7 +10,6 @@ export default async function Home() {
   data.map((gift : any) => {gifts.push({
     id: gift.id,
     name: gift.name,
-    link: `[${gift.link_placeholder}](${gift.link})`,
     price: gift.price ,
     demo: (
       <div
