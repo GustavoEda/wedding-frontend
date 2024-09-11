@@ -1,7 +1,6 @@
 import Card from "@/components/home/card";
 import Balancer from "react-wrap-balancer";
 import Image from "next/image";
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 export default async function Home() {
   const response = await fetch('https://wedding-backend-seven.vercel.app/api/gifts', { cache: 'no-store' });
@@ -65,13 +64,13 @@ data.map((gift: any) => {
             <br /><br />
             Como alguns de vocês já sabem, o Gustavo/Eda/Cutuca já mora sozinho e tem bastante coisa, e a Renata, sempre ansiosa, já garantiu alguns itens para o nosso novo lar.
             <br /><br />
-            <strong>Se vocês desejarem nos presentear com algo físico, é só entrar em contato com a Renata ou o Gustavo para combinarmos a entrega.</strong> 
+            <strong>Se vocês desejarem nos presentear com algo físico, é só entrar em contato com a Renata ou o Gustavo para combinarmos a entrega.</strong> <br />
             Caso prefiram nos ajudar com algum valor para a nossa nova vida, deixamos alguns itens abaixo com um código pix que vai direto pra noivo. 
             <br /><br />
             <strong> Mas lembrem-se: o mais importante para nós é a presença de cada um de vocês nesse momento tão especial.
             ❤️ Não se sintam pressionados a dar presentes e valores que possam comprometer suas finanças.</strong>
             <br /><br />
-            Com carinho, Renata e Gustavo/Eda/Cutuca.
+            Com carinho, Renata e Gustavo.
             </Balancer>
           </p>
 
