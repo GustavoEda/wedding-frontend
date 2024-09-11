@@ -34,7 +34,7 @@ const DemoModal = ({
     setName(event.target.value); // Atualizar o estado com o valor do input
   };
    function copyToClipboard() {
-        navigator.clipboard.writeText("edadp12@gmail.com");
+        navigator.clipboard.writeText("edapd12@gmail.com");
         alert("Chave pix copiada");
     };
   return (
