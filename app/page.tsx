@@ -66,7 +66,7 @@ data.map((gift: any) => {
             Como alguns de vocês já sabem, o Gustavo/Eda/Cutuca já mora sozinho e tem bastante coisa, e a Renata, sempre ansiosa, já garantiu alguns itens para o nosso novo lar.
             <br /><br />
             <strong>Se vocês desejarem nos presentear com algo físico, é só entrar em contato com a Renata ou o Gustavo para combinarmos a entrega.</strong> 
-            Caso prefiram nos ajudar com algum valor para a nossa nova vida, deixamos alguns itens abaixo com um código pix que vai direto pra noiva. 
+            Caso prefiram nos ajudar com algum valor para a nossa nova vida, deixamos alguns itens abaixo com um código pix que vai direto pra noivo. 
             <br /><br />
             <strong> Mas lembrem-se: o mais importante para nós é a presença de cada um de vocês nesse momento tão especial.
             ❤️ Não se sintam pressionados a dar presentes e valores que possam comprometer suas finanças.</strong>
