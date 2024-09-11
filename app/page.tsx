@@ -22,9 +22,10 @@ data.map((gift: any) => {
                         width: "100%",
                         height: "100%",
                         objectFit: "cover",
-                        border: "1px solid #000", // Adiciona uma borda à sua imagem
-                        boxSizing: "border-box", // Assegura que a borda não aumente o tamanho da imagem
-                        margin: "auto", // Centraliza a imagem no cartão
+                        border: "1px solid #000", // Adds a border to your image
+                        boxSizing: "border-box", // Ensures the border does not increase the size of the image
+                        margin: "auto", // Centers the image in the card
+                        marginTop: "10px", // Moves the image a bit down
                     }}
                     alt={gift.name}
                     src={gift.image}
