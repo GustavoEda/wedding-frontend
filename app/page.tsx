@@ -7,28 +7,36 @@ export default async function Home() {
   const data = await response.json();
   const gifts : any = [];
 
-  data.map((gift : any) => {gifts.push({
-    id: gift.id,
-    name: gift.name,
-    price: gift.price ,
-    demo: (
-      <div
-        className="flex items-center justify-center space-x-20"
-        style={{ height: "100%" }}
-      >
-        <Image
-          style={{ width: "100%", height: "100%", objectFit: "cover" }}
-          alt={gift.name}
-          src={gift.image}
-          width={350}
-          height={350}
-        />
-      </div>
-    ),
-    selected: Boolean(gift.guest),
-    description: gift.description
+data.map((gift: any) => {
+    gifts.push({
+        id: gift.id,
+        name: gift.name,
+        price: gift.price,
+        demo: (
+            <div
+                className="flex items-center justify-center space-x-20"
+                style={{ height: "100%" }}
+            >
+                <Image
+                    style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                        border: "1px solid #000", // Adiciona uma borda à sua imagem
+                        boxSizing: "border-box", // Assegura que a borda não aumente o tamanho da imagem
+                        margin: "auto", // Centraliza a imagem no cartão
+                    }}
+                    alt={gift.name}
+                    src={gift.image}
+                    width={350}
+                    height={350}
+                />
+            </div>
+        ),
+        selected: Boolean(gift.guest),
+        description: gift.description,
     });
-  });
+});
 
   return (
     <>
