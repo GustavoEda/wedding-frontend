@@ -25,11 +25,11 @@ export default function Card({
   const { DemoModal, setShowDemoModal } = useDemoModal({ title, price, id, setIsSelected });
 return (
 <div
-  className="relative col-span-1 overflow-hidden rounded-xl bg-white shadow-md flex flex-col items-center justify-center py-32"
+  className="relative col-span-1 overflow-hidden rounded-xl bg-white shadow-md flex flex-col items-center justify-center py-16 md:py-16"
 >
   <DemoModal />
 
-  <div className="flex h-60 items-center justify-center mb-3">{demo}</div>
+  <div className="flex h-40 items-center justify-center mb-3">{demo}</div>
 
   <div className="mx-auto max-w-md text-center md:text-left mb-3 md:flex-grow">
     <h2
