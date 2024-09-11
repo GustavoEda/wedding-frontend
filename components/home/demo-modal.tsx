@@ -82,7 +82,7 @@ const DemoModal = ({
             </h3>
 
             <h3 className="text-l font-display font-normal">
-              Agora é com você! Faça um pix de R${price} para 19992026317
+              Agora é com você! Faça um pix de R${price} para <Balancer>edapd12@gmail.com</Balancer>
             </h3>
 
             <Balancer>
