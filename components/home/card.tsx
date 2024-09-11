@@ -22,7 +22,7 @@ export default function Card({
   description: string;
 }) {
   const [isSelected, setIsSelected] = useState(Boolean(selected));
-  const { DemoModal, setShowDemoModal } = useDemoModal({ title, id, setIsSelected });
+  const { DemoModal, setShowDemoModal } = useDemoModal({ title, price, id, setIsSelected });
 return (
   <div
     className="relative col-span-1 overflow-hidden rounded-xl bg-white shadow-md"
