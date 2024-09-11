@@ -44,20 +44,30 @@ export default async function Home() {
           <Balancer>Eda & Renata</Balancer>
         </h1>
         <p
-          className="mt-6 animate-fade-up text-center text-gray-500 opacity-0 md:text-xl"
-          style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
-        >
-          <Balancer>
-          Oi pessoal,
-          Com o coração transbordando de alegria, queremos compartilhar uma notícia maravilhosa: vamos nos casar! 🎉
-          Como alguns de vocês já sabem, o Gustavo/Eda/Cutuca já mora sozinho e tem bastante coisa, e a Renata, sempre ansiosa, já garantiu alguns itens para o nosso novo lar.
-          Se vocês desejarem nos presentear com algo físico, é só entrar em contato com a Renata ou o Gustavo para combinarmos a entrega. 
-          Caso prefiram nos ajudar com algum valor para a nossa nova vida, deixamos alguns itens abaixo com um código pix que vai direto pra noiva. 
-          <strong>Mas lembrem-se: o mais importante para nós é a presença de cada um de vocês nesse momento tão especial.
-          ❤️ Não se sintam pressionados a dar presentes e valores que possam comprometer suas finanças.</strong>
-          Com carinho, Renata e Gustavo/Eda/Cutuca.
-          </Balancer>
-        </p>
+            className="mt-6 animate-fade-up text-center text-gray-500 opacity-0 md:text-xl"
+            style={{ 
+              animationDelay: "0.25s", 
+              animationFillMode: "forwards",
+              textAlign: "justify"
+            }}
+          >
+            <Balancer>
+            Oi pessoal,
+            Com o coração transbordando de alegria, queremos compartilhar uma notícia maravilhosa: vamos nos casar! 🎉
+            </br>
+            Como alguns de vocês já sabem, o Gustavo/Eda/Cutuca já mora sozinho e tem bastante coisa, e a Renata, sempre ansiosa, já garantiu alguns itens para o nosso novo lar.
+            </br>
+
+            <strong>Se vocês desejarem nos presentear com algo físico, é só entrar em contato com a Renata ou o Gustavo para combinarmos a entrega.</strong> 
+            Caso prefiram nos ajudar com algum valor para a nossa nova vida, deixamos alguns itens abaixo com um código pix que vai direto pra noiva. 
+                        </br>
+            <strong> Mas lembrem-se: o mais importante para nós é a presença de cada um de vocês nesse momento tão especial.
+            ❤️ Não se sintam pressionados a dar presentes e valores que possam comprometer suas finanças.</strong>
+                        </br>
+
+            Com carinho, Renata e Gustavo/Eda/Cutuca.
+            </Balancer>
+          </p>
 
         <p
           className="mt-6 animate-fade-up text-center text-gray-500 opacity-0 md:text-xl"
