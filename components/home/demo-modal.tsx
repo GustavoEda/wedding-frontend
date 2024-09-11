@@ -126,4 +126,3 @@ export function useDemoModal({ title, price, id, setIsSelected }: { title: strin
     [setShowDemoModal, DemoModalCallback],
   );
 }
-{copyToClipboard}
