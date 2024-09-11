@@ -1,6 +1,7 @@
 import Card from "@/components/home/card";
 import Balancer from "react-wrap-balancer";
 import Image from "next/image";
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 export default async function Home() {
   const response = await fetch('https://wedding-backend-seven.vercel.app/api/gifts', { cache: 'no-store' });
@@ -49,7 +50,7 @@ data.map((gift: any) => {
         color: "#531D13",
       }}
     >
-      <Balancer>Eda & Renata</Balancer>
+      <Balancer style={{ fontFamily: 'Great Vibes', fontSize: '24px' }}>Eda & Renata</Balancer>
     </h1>
         <p
             className="mt-6 animate-fade-up text-center text-gray-500 opacity-0 md:text-xl"
