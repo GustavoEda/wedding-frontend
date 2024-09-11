@@ -33,7 +33,10 @@ const DemoModal = ({
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setName(event.target.value); // Atualizar o estado com o valor do input
   };
-
+   function copyToClipboard(e) {
+        navigator.clipboard.writeText("edadp12@gmail.com");
+        alert("Chave pix copiada");
+    };
   return (
     <Modal showModal={showDemoModal} setShowModal={setShowDemoModal}>
       {isConfirmed ? (
@@ -89,9 +92,9 @@ const DemoModal = ({
               <button
                 type="button"
                 className="mb-3 mr-2 rounded-lg bg-olive px-5 py-2.5 text-center text-sm font-medium text-cream shadow-lg"
-                onClick={() => onClickConfirmButton(id)}
+                onClick={copyToClipboard()}
               >
-                Fechar
+                Copiar chave pix
               </button>
             </Balancer>
           </div>
@@ -123,3 +126,4 @@ export function useDemoModal({ title, price, id, setIsSelected }: { title: strin
     [setShowDemoModal, DemoModalCallback],
   );
 }
+{copyToClipboard}
