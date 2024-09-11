@@ -17,4 +17,21 @@
     --text-brown: 83, 29, 19;
     --text-olive: 89, 93, 68;
   }
+  
+  @media screen and (max-width: 640px) {
+    :root {
+      --bg-cream: 200, 190, 188;
+      --bg-light-brown: 184, 152, 128;
+      --bg-orange: 188, 116, 78;
+      --bg-brown: 83, 29, 19;
+      --bg-olive: 89, 93, 68;
+  
+      --text-white: 225, 255, 255;
+      --text-cream: 225, 215, 213;
+      --text-light-brown: 184, 152, 128;
+      --text-orange: 188, 116, 78;
+      --text-brown: 83, 29, 19;
+      --text-olive: 89, 93, 68;
+    }
+  }
 }
