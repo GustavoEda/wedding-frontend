@@ -80,7 +80,7 @@ data.map((gift: any) => {
           style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
         >
           <Balancer>
-            <strong>PIX Renata:</strong> PIX-RENATA
+            <strong>PIX do Gustavo Eda:</strong> edapd12@gmail.com
           </Balancer>
         </p>
 
