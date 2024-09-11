@@ -22,7 +22,6 @@ data.map((gift: any) => {
                         width: "100%",
                         height: "100%",
                         objectFit: "cover",
-                        border: "1px solid #000", // Adds a border to your image
                         boxSizing: "border-box", // Ensures the border does not increase the size of the image
                         margin: "auto", // Centers the image in the card
                         marginTop: "10px", // Moves the image a bit down
