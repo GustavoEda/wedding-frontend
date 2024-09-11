@@ -97,9 +97,8 @@ return (
               : "mb-3 rounded-lg bg-olive px-5 py-2.5 text-center text-sm font-medium text-cream shadow-lg"
           }
           onClick={isSelected ? undefined : () => setShowDemoModal(true)}
-          disabled={isSelected}
         >
-          {isSelected ? "Já foi escolhido" : "Vou dar esse!"}
+          {isSelected ? "Vou escolher esse!" : "Vou escolher esse!"}
         </button>
       </div>
     </div>
