@@ -73,14 +73,15 @@ return (
       
       <div
         style={{
-          display: "flex",
-          justifyContent: "center",
-          position: "absolute",
-          width: "100%",
-          maxWidth: "none",
-          bottom: 0,
-          marginTop: "-40px", // Move button 20px up
-        }}
+        display: "flex",
+        justifyContent: "center", // Centraliza horizontalmente
+        alignItems: "center",      // Centraliza verticalmente
+        position: "absolute",
+        width: "100%",
+        maxWidth: "none",
+        bottom: 0,
+        marginTop: "-40px", 
+      }}
       >
         <button
           type="button"
