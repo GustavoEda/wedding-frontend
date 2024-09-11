@@ -29,9 +29,9 @@ return (
 >
   <DemoModal />
 
-  <div className="flex h-60 items-center justify-center mb-3">{demo}</div>
+    <div className="flex h-60 items-center justify-center mb-3" style={{ marginBottom: '20px' }}>{demo}</div>
 
-  <div className="mx-auto max-w-md text-center md:text-left mb-3 md:flex-grow">
+    <div className="mx-auto max-w-md text-center md:text-left mb-3 md:flex-grow">
     <h2
       style={{
         animationDelay: "0.15s",
