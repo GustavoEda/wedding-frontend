@@ -56,7 +56,8 @@ data.map((gift: any) => {
             style={{ 
               animationDelay: "0.25s", 
               animationFillMode: "forwards",
-              textAlign: "justify"
+              textAlign: "center",
+              maxWidth: '800px',
             }}
           >
             <Balancer>
