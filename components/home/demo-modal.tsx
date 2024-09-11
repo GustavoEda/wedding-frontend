@@ -101,7 +101,7 @@ const DemoModal = ({
   );
 };
 
-export function useDemoModal({ title, id, setIsSelected }: { title: string, id: number, setIsSelected: any  }) {
+export function useDemoModal({ title, price, id, setIsSelected }: { title: string, price: string, id: number, setIsSelected: any  }) {
   const [showDemoModal, setShowDemoModal] = useState(false);
 
   const DemoModalCallback = useCallback(() => {
@@ -111,11 +111,12 @@ export function useDemoModal({ title, id, setIsSelected }: { title: string, id: 
         setShowDemoModal={setShowDemoModal}
         title={title}
         id={id}
+        price={price}
         key={id}
         setIsSelected={setIsSelected}
       />
     );
-  }, [showDemoModal, setShowDemoModal, title, id, setIsSelected]);
+  }, [showDemoModal, setShowDemoModal, title, price, id, setIsSelected]);
 
   return useMemo(
     () => ({ setShowDemoModal, DemoModal: DemoModalCallback }),
