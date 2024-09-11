@@ -74,9 +74,7 @@ return (
       <div
         style={{
         display: "flex",
-        justifyContent: "center", // Centraliza horizontalmente
         alignItems: "center",      // Centraliza verticalmente
-        position: "absolute",
         width: "100%",
         maxWidth: "none",
         bottom: 0,
@@ -87,7 +85,7 @@ return (
           type="button"
           className={
             isSelected
-              ? "text-dark-brown mb-3 cursor-not-allowed rounded-lg bg-orange px-5 py-2.5 text-center text-sm font-medium shadow-lg"
+              ? "text-dark-brown mb-3 cursor-not-allowed rounded-lg bg-orange px-5 py-2.5 text-center justify-center text-sm font-medium shadow-lg"
               : "mb-3 rounded-lg bg-olive px-5 py-2.5 text-center text-sm font-medium text-cream shadow-lg"
           }
           onClick={isSelected ? undefined : () => setShowDemoModal(true)}
