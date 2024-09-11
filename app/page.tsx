@@ -42,16 +42,16 @@ data.map((gift: any) => {
   return (
     <>
       <div className="z-10 w-full max-w-xl px-5 xl:px-0">
-        <h1
-          className="animate-fade-up bg-gradient-to-br from-black to-stone-500 bg-clip-text pb-3 text-center font-display text-4xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm md:text-7xl md:leading-[5rem]"
-          style={{
-            animationDelay: "0.15s",
-            animationFillMode: "forwards",
-            color: "#531D13",
-          }}
-        >
-          <Balancer>Eda & Renata</Balancer>
-        </h1>
+    <h1
+      className="animate-fade-up bg-gradient-to-br from-black to-stone-500 bg-clip-text pb-3 text-center font-display text-3xl sm:text-4xl md:text-7xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm md:leading-[5rem]"
+      style={{
+        animationDelay: "0.15s",
+        animationFillMode: "forwards",
+        color: "#531D13",
+      }}
+    >
+      <Balancer>Eda & Renata</Balancer>
+    </h1>
         <p
             className="mt-6 animate-fade-up text-center text-gray-500 opacity-0 md:text-xl"
             style={{ 
@@ -85,19 +85,19 @@ data.map((gift: any) => {
         </p>
 
       </div>
-      <div className="my-10 grid w-full max-w-screen-xl animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
-        {gifts.map(({ id, name, demo, price, selected, description } : {id: number, name: string, demo: any, price: string, selected: boolean, description: string}) => (
-          <Card
-            key={id}
-            id={id}
-            title={name}
-            price={price}
-            demo={demo}
-            selected={selected}
-            description={description}
-          />
-        ))}
-      </div>
+      <div className="my-10 grid w-full max-w-screen-xl animate-fade-up grid-cols-1 sm:grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
+    {gifts.map(({ id, name, demo, price, selected, description } : {id: number, name: string, demo: any, price: string, selected: boolean, description: string}) => (
+      <Card
+        key={id}
+        id={id}
+        title={name}
+        price={price}
+        demo={demo}
+        selected={selected}
+        description={description}
+      />
+    ))}
+  </div>
     </>
   );
 }
