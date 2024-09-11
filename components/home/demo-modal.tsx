@@ -33,7 +33,7 @@ const DemoModal = ({
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setName(event.target.value); // Atualizar o estado com o valor do input
   };
-   function copyToClipboard(e) {
+   function copyToClipboard(e: React.MouseEvent<HTMLButtonElement>) {
         navigator.clipboard.writeText("edadp12@gmail.com");
         alert("Chave pix copiada");
     };
