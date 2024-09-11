@@ -76,6 +76,7 @@ return (
       style={{
         display: "flex",
         alignItems: "center", // Centraliza verticalmente
+        justifyContent: "center",
         width: "100%",
         maxWidth: "none",
         bottom: 0,
