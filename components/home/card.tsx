@@ -86,7 +86,7 @@ return (
           width: "100%",
           maxWidth: "none",
           bottom: 0,
-          marginTop: "-20px", // Move button 20px up
+          marginTop: "-40px", // Move button 20px up
         }}
       >
         <button
