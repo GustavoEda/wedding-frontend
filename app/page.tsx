@@ -61,7 +61,6 @@ data.map((gift: any) => {
             }}
           >
             <Balancer>
-            Oi pessoal,
             Com o coração transbordando de alegria, queremos compartilhar uma notícia maravilhosa: vamos nos casar! 🎉
             <br /><br />
             Como alguns de vocês já sabem, o Gustavo/Eda/Cutuca já mora sozinho e tem bastante coisa, e a Renata, sempre ansiosa, já garantiu alguns itens para o nosso novo lar.
