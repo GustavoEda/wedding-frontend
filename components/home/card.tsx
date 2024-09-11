@@ -25,11 +25,11 @@ export default function Card({
   const { DemoModal, setShowDemoModal } = useDemoModal({ title, price, id, setIsSelected });
 return (
 <div
-  className="relative col-span-1 overflow-hidden rounded-xl bg-white shadow-md flex flex-col items-center justify-center py-16 md:py-16"
+  className="relative col-span-1 overflow-hidden rounded-xl bg-white shadow-md flex flex-col items-center justify-center pt-16 pb-16"
 >
   <DemoModal />
 
-  <div className="flex h-40 items-center justify-center mb-3">{demo}</div>
+  <div className="flex h-60 items-center justify-center mb-3">{demo}</div>
 
   <div className="mx-auto max-w-md text-center md:text-left mb-3 md:flex-grow">
     <h2
@@ -46,7 +46,7 @@ return (
     <h2 
        className="bg-gradient-to-br from-black to-stone-500 bg-clip-text px-1 pt-3 font-display text-xl font-bold text-transparent md:text-2xl md:font-normal"
     >
-      <Balancer>R${parseFloat(price).toFixed(2).replace('.', ',')}</Balancer>
+      <Balancer>R${price}</Balancer>
     </h2>
 
     <div className="prose-sm leading-normal text-gray-500 mb-3 md:prose">
