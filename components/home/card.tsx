@@ -35,7 +35,6 @@ return (
     }}
   >
     <DemoModal />
-
     <div className="flex h-60 items-center justify-center">{demo}</div>
     
     <div className="mx-auto max-w-md text-center" style={{ flexGrow: 1, margin: 0 }}>
@@ -44,12 +43,13 @@ return (
           animationDelay: "0.15s",
           animationFillMode: "forwards",
           color: "#531D13",
+          marginTop: "10px",  // Move title 10px down
         }}
         className="bg-gradient-to-br from-black to-stone-500 bg-clip-text px-1 font-display text-xl font-bold text-transparent md:text-3xl md:font-bold"
       >
         <Balancer>{title}</Balancer>
       </h2>
-      
+
       <h2 className="bg-gradient-to-br from-black to-stone-500 bg-clip-text px-1 pt-3 font-display text-xl font-bold text-transparent md:text-2xl md:font-normal">
         <Balancer>R${parseFloat(price).toFixed(2).replace('.', ',')}</Balancer>
       </h2>
@@ -72,7 +72,7 @@ return (
           </ReactMarkdown>
         </Balancer>
       </div>
-      
+
       <div className="leading-normal text-gray-500" style={{marginBottom: "20%"}}>
         <Balancer></Balancer>
       </div>
@@ -105,6 +105,7 @@ return (
             width: "100%",
             maxWidth: "none",
             bottom: 0,
+            marginTop: "-10px",  // Move button 10px up when isSelected is true
           }}
         >
           <button
