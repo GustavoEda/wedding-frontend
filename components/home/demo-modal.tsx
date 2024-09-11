@@ -92,7 +92,7 @@ const DemoModal = ({
               <button
                 type="button"
                 className="mb-3 mr-2 rounded-lg bg-olive px-5 py-2.5 text-center text-sm font-medium text-cream shadow-lg"
-                onClick={copyToClipboard()}
+                onClick={copyToClipboard}
               >
                 Copiar chave pix
               </button>
