@@ -19,6 +19,7 @@ const DemoModal = ({
   showDemoModal: boolean;
   setShowDemoModal: Dispatch<SetStateAction<boolean>>;
   title: string;
+  price: string;
   id: number;
   setIsSelected: any,
 }) => {
