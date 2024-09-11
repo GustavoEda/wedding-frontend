@@ -25,29 +25,22 @@ export default function Card({
   const { DemoModal, setShowDemoModal } = useDemoModal({ title, price, id, setIsSelected });
 return (
   <div
-    className="relative col-span-1 overflow-hidden rounded-xl bg-white shadow-md"
-    style={{
-      display: "flex",
-      flexDirection: "column",
-      height: "100%",
-      width: "100%",
-      margin: 0,
-    }}
-  >
+      className="relative col-span-1 overflow-hidden rounded-xl bg-white shadow-md flex flex-col items-center justify-center py-32 md:py-32"
+    >
     <DemoModal />
 
     <div className="flex h-60 items-center justify-center">{demo}</div>
-    
-    <div className="mx-auto max-w-md text-center" style={{ flexGrow: 1, margin: 0 }}>
-      <h2
-        style={{
-          animationDelay: "0.15s",
-          animationFillMode: "forwards",
-          color: "#531D13",
-          marginTop: "10px",  // Move title 10px down
-        }}
-        className="bg-gradient-to-br from-black to-stone-500 bg-clip-text px-1 font-display text-xl font-bold text-transparent md:text-3xl md:font-bold"
-      >
+      
+      <div className="mx-auto max-w-md text-center md:text-left" style={{ flexGrow: 1 }}>
+        <h2
+          style={{
+            animationDelay: "0.15s",
+            animationFillMode: "forwards",
+            color: "#531D13",
+            marginTop: "10px",
+          }}
+          className="bg-gradient-to-br from-black to-stone-500 bg-clip-text px-1 font-display text-xl font-bold text-transparent md:text-3xl md:font-bold"
+        >
         <Balancer>{title}</Balancer>
       </h2>
       
