@@ -12,6 +12,7 @@ const DemoModal = ({
   showDemoModal,
   setShowDemoModal,
   title,
+  price,
   id,
   setIsSelected,
 }: {
@@ -25,15 +26,7 @@ const DemoModal = ({
   const [name, setName] = useState('');
 
   const onClickConfirmButton = async (id: number) => {
-    const response = await fetch(`https://wedding-backend-seven.vercel.app/api/gifts/${id}`, {
-      method: 'PUT',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({guest: name})
-    });
-    setIsConfirmed(!isConfirmed)
-    setIsSelected(true);
+    setShowDemoModal(false)
   };
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -88,19 +81,8 @@ const DemoModal = ({
             </h3>
 
             <h3 className="text-l font-display font-normal">
-              Para sabermos quem deu o presente, insira seu nome:
+              Agora é com você! Faça um pix de R${price} para edapd12@gmail.com
             </h3>
-
-            <div className="my-6 w-full text-left">
-              <input
-                type="text"
-                id="name"
-                className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
-                placeholder="Nome Completo"
-                onChange={handleInputChange}
-                required
-              ></input>
-            </div>
 
             <Balancer>
               <button
@@ -108,7 +90,7 @@ const DemoModal = ({
                 className="mb-3 mr-2 rounded-lg bg-olive px-5 py-2.5 text-center text-sm font-medium text-cream shadow-lg"
                 onClick={() => onClickConfirmButton(id)}
               >
-                Confirmar
+                Fechar
               </button>
             </Balancer>
           </div>
