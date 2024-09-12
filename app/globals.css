@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --bg-cream: 173, 216, 230;
+    --bg-cream: 217, 242, 243;
     --bg-light-brown: 184, 152, 128;
     --bg-orange: 188, 116, 78;
     --bg-brown: 83, 29, 19;
@@ -20,7 +20,7 @@
   
   @media screen and (max-width: 640px) {
     :root {
-      --bg-cream: 173, 216, 230;
+      --bg-cream: 217, 242, 243;
       --bg-light-brown: 184, 152, 128;
       --bg-orange: 188, 116, 78;
       --bg-brown: 83, 29, 19;
