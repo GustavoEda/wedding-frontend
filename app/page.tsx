@@ -76,7 +76,7 @@ data.map((gift: any) => {
           </p>
 
         <p
-          className="mt-6 animate-fade-up text-center text-gray-500 opacity-0 md:text-xl"
+          className="mt-6 animate-fade-up text-center opacity-0 md:text-xl"
           style={{ animationDelay: "0.25s", animationFillMode: "forwards", textAlign: "center" }}
         >
           <Balancer>
