@@ -49,7 +49,7 @@ data.map((gift: any) => {
         color: "#531D13",
       }}
     >
-      <Balancer style={{ fontFamily: 'Great Vibes', fontSize: '24px' }}>Eda & Renata</Balancer>
+      <Balancer style={{ fontFamily: 'cursive', fontSize: '24px' }}>Gustavo & Renata</Balancer>
     </h1>
         <p
             className="mt-6 animate-fade-up text-center text-gray-500 opacity-0 md:text-xl"
