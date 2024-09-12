@@ -41,14 +41,14 @@ data.map((gift: any) => {
   return (
     <>
       <div className="z-10 w-full max-w-xl px-5 xl:px-0">
-    <h1
-      className="animate-fade-up bg-gradient-to-br bg-clip-text pb-3 text-center font-display text-3xl sm:text-4xl md:text-7xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm md:leading-[5rem]"
-      style={{
-        animationDelay: "0.15s",
-        animationFillMode: "forwards",
-        color: "#531D13",
-      }}
-    >
+      <h1
+          className="animate-fade-up bg-gradient-to-br bg-clip-text pb-3 text-center font-display text-3xl sm:text-4xl md:text-7xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm md:leading-[5rem]"
+          style={{
+            animationDelay: "0.15s",
+            animationFillMode: "forwards",
+            color: "#ffffff", // alterado para a cor branca
+          }}
+        >
       <Balancer style={{ fontFamily: 'cursive', fontSize: '24px' }}>Gustavo & Renata</Balancer>
     </h1>
         <p
