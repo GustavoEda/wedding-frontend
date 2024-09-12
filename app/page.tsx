@@ -46,7 +46,7 @@ data.map((gift: any) => {
           style={{
             animationDelay: "0.15s",
             animationFillMode: "forwards",
-            color: "#ffffff", // alterado para a cor branca
+            color: "#000000", // alterado para a cor branca
           }}
         >
       <Balancer style={{ fontFamily: 'cursive', fontSize: '24px' }}>Gustavo & Renata</Balancer>
